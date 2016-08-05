@@ -56,6 +56,7 @@ function uploadImage() {
             try {
                 // Pick image from div
                  var img = document.getElementById('pimage');
+                 alert(img+'img');
                 img.style.visibility = "visible";
                 img.style.display = "block";
                 var imageURI = uri;
@@ -65,6 +66,7 @@ function uploadImage() {
                 }
                 // Verify server has been entered
                 server = document.getElementById('server').value;
+                alert(server+'server');
                 console.log("Server "+server);
                 if (server) {
                     // Specify transfer options
